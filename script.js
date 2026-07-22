@@ -5,9 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const typedTextSpan = document.getElementById("typed-text");
   const roles = [
     "Backend Software Engineer",
-    "DEPI Data Engineering Trainee",
-    "REST API & Database Architect",
-    "Software Engineering Student"
+    "Software Engineer"
   ];
   let roleIndex = 0;
   let charIndex = 0;
