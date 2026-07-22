@@ -1,647 +1,685 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Mohamed Ekramy Mohamed Sebak – Software Engineering student and junior developer. Portfolio showcasing projects, skills, and experience."
-    />
-    <title>Mohamed Ekramy | Software Engineer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- ========== NAVBAR ========== -->
-    <nav class="navbar" id="navbar">
-      <div class="nav-container">
-        <a href="#hero" class="nav-logo">
-          <span class="logo-bracket">&lt;</span>ME<span class="logo-bracket"
-            >/&gt;</span
-          >
-        </a>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mohamed Ekramy Sebak – Software Engineering Student & Backend Developer specializing in REST APIs, Databases, and Data Engineering." />
+  <title>Mohamed Ekramy | Backend Developer & Software Engineer</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <!-- ========== HERO ========== -->
-    <section class="hero" id="hero">
-      <div class="hero-bg-grid"></div>
-      <div class="hero-glow hero-glow-1"></div>
-      <div class="hero-glow hero-glow-2"></div>
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>ME<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#featured-projects" class="nav-link">Featured Projects</a></li>
+        <li><a href="#other-projects" class="nav-link">Other Projects</a></li>
+        <li><a href="#education-certifications" class="nav-link">Education & Training</a></li>
+        <li><a href="#timeline" class="nav-link">Timeline</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
       <div class="hero-content">
         <div class="hero-badge">
           <span class="badge-dot"></span>
-          Available for Internships
+          Seeking Backend & Data Engineering Internships
         </div>
-        <h1 class="hero-name">
-          <span class="hero-greeting">Hi, I'm</span>
-          <span class="hero-fullname">Mohamed Ekramy</span>
-        </h1>
-        <h2 class="hero-title">
-          <span class="typed-text" id="typed-text"></span
-          ><span class="cursor">|</span>
-        </h2>
-        <p class="hero-location">
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-            <circle cx="12" cy="10" r="3" />
-          </svg>
-          Egypt
-        </p>
+        <h2 class="hero-greeting">Hello, I'm</h2>
+        <h1 class="hero-name">Mohamed Ekramy</h1>
+        <div class="hero-title">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </div>
+
+        <div class="hero-highlights">
+          <span class="highlight-chip">REST APIs</span>
+          <span class="highlight-chip">Authentication Systems</span>
+          <span class="highlight-chip">SQL & NoSQL</span>
+          <span class="highlight-chip">DEPI Data Engineering</span>
+        </div>
+
         <p class="hero-description">
-          A motivated Software Engineering student with hands-on experience in
-          building practical software solutions. Passionate about React,
-          TypeScript, and solving real-world problems through code.
+          Software Engineering student passionate about engineering robust backend systems, architecting efficient relational and NoSQL databases, and expanding into data processing pipelines. 
         </p>
+
         <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-outline">Get In Touch</a>
-          <a
-            href="https://github.com/Mo7amed-Ekramy"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-ghost"
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-              />
-            </svg>
+          <a href="https://github.com/Mo7amed-Ekramy" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
             GitHub
           </a>
-        </div>
-        <div class="hero-scroll-hint">
-          <span>Scroll to explore</span>
-          <div class="scroll-arrow"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== ABOUT ========== -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">01 / About</span>
-          <h2 class="section-title">About Me</h2>
-        </div>
-        <div class="about-grid">
-          <div class="about-avatar-wrap">
-            <div class="about-avatar">
-              <span class="avatar-initials">ME</span>
-            </div>
-            <div class="about-status">
-              <span class="status-dot"></span>
-              <span>Open to work</span>
-            </div>
-          </div>
-          <div class="about-text">
-            <p>
-              I'm a <strong>Software Engineering student</strong> at Assiut
-              National University, expected to graduate in 2027. I'm driven by a
-              genuine love of building things — from full-stack web apps to
-              exploring data engineering concepts.
-            </p>
-            <p>
-              My main stack centers around
-              <strong>React, TypeScript, and Python</strong>, and I enjoy
-              writing clean, modular code. I'm currently expanding my knowledge
-              through the <strong>DEPI Data Engineering program</strong>,
-              sharpening my backend and database skills.
-            </p>
-            <p>
-              When I'm not coding, I'm working on improving my problem-solving
-              abilities and exploring new technologies. I believe in continuous
-              learning and am always looking for collaborative opportunities to
-              grow as a professional.
-            </p>
-            <div class="about-facts">
-              <div class="fact-item">
-                <span class="fact-number">1+</span>
-                <span class="fact-label">Year of Experience</span>
-              </div>
-              <div class="fact-item">
-                <span class="fact-number">1</span>
-                <span class="fact-label">Project Shipped</span>
-              </div>
-              <div class="fact-item">
-                <span class="fact-number">3</span>
-                <span class="fact-label">Languages Known</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== SKILLS ========== -->
-    <section class="section section-alt" id="skills">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">02 / Skills</span>
-          <h2 class="section-title">Technical Skills</h2>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3 class="skill-cat-title">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <polyline points="16 18 22 12 16 6" />
-                <polyline points="8 6 2 12 8 18" />
-              </svg>
-              Programming Languages
-            </h3>
-            <div class="skill-tags">
-              <span class="skill-tag skill-tag--python">Python</span>
-              <span class="skill-tag skill-tag--cpp">C++</span>
-              <span class="skill-tag skill-tag--js">JavaScript</span>
-              <span class="skill-tag skill-tag--ts">TypeScript</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h3 class="skill-cat-title">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <line x1="2" y1="12" x2="22" y2="12" />
-                <path
-                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-                />
-              </svg>
-              Web Technologies
-            </h3>
-            <div class="skill-tags">
-              <span class="skill-tag skill-tag--react">React</span>
-              <span class="skill-tag skill-tag--html">HTML5</span>
-              <span class="skill-tag skill-tag--css">CSS3</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h3 class="skill-cat-title">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <ellipse cx="12" cy="5" rx="9" ry="3" />
-                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
-                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
-              </svg>
-              Databases
-            </h3>
-            <div class="skill-tags">
-              <span class="skill-tag skill-tag--mysql">MySQL</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h3 class="skill-cat-title">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                <path d="M2 17l10 5 10-5" />
-                <path d="M2 12l10 5 10-5" />
-              </svg>
-              Concepts
-            </h3>
-            <div class="skill-tags">
-              <span class="skill-tag skill-tag--concept">OOP</span>
-              <span class="skill-tag skill-tag--concept">Data Structures</span>
-              <span class="skill-tag skill-tag--concept">RESTful APIs</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h3 class="skill-cat-title">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                <circle cx="9" cy="7" r="4" />
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-              </svg>
-              Soft Skills
-            </h3>
-            <div class="skill-tags">
-              <span class="skill-tag skill-tag--soft">Problem Solving</span>
-              <span class="skill-tag skill-tag--soft">Analytical Thinking</span>
-              <span class="skill-tag skill-tag--soft">Teamwork</span>
-              <span class="skill-tag skill-tag--soft">Fast Learner</span>
-              <span class="skill-tag skill-tag--soft">Adaptability</span>
-              <span class="skill-tag skill-tag--soft">Self-Learning</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== PROJECTS ========== -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">03 / Projects</span>
-          <h2 class="section-title">Projects</h2>
-        </div>
-        <div class="projects-grid">
-          <article class="project-card featured-project">
-            <div class="project-card-inner">
-              <div class="project-header">
-                <div class="project-icon">
-                  <svg
-                    width="28"
-                    height="28"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                  >
-                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-                    <path
-                      d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
-                    />
-                  </svg>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/Mo7amed-Ekramy"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project-link"
-                    aria-label="GitHub"
-                  >
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <h3 class="project-title">Web Library Management System</h3>
-              <p class="project-description">
-                A full-stack web application for managing books, users, and
-                library operations. Features a complete authentication system,
-                book inventory management, and a borrowing/loan tracking system.
-              </p>
-              <ul class="project-highlights">
-                <li>Authentication system with secure login</li>
-                <li>Book management & borrowing workflow</li>
-                <li>MySQL database with users, books & loan records</li>
-                <li>RESTful API principles & modular code structure</li>
-              </ul>
-              <div class="project-tech">
-                <span class="tech-badge">React</span>
-                <span class="tech-badge">TypeScript</span>
-                <span class="tech-badge">MySQL</span>
-                <span class="tech-badge">REST API</span>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="projects-more">
-          <p>More projects coming soon. Follow me on GitHub for updates!</p>
-          <a
-            href="https://github.com/Mo7amed-Ekramy"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-outline"
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-              />
-            </svg>
-            View GitHub Profile
+          <a href="https://linkedin.com/in/mohamed-ekramy25" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            Get In Touch
           </a>
         </div>
       </div>
-    </section>
 
-    <!-- ========== EDUCATION ========== -->
-    <section class="section section-alt" id="education">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">04 / Education</span>
-          <h2 class="section-title">Education & Training</h2>
+      <!-- Code Box Visual -->
+      <div class="hero-code-box">
+        <div class="code-header">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="code-title">engineer_profile.py</span>
         </div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-badge timeline-badge--edu">Education</div>
-              <h3 class="timeline-title">Bachelor's in Software Engineering</h3>
-              <p class="timeline-org">
-                Assiut National University – Faculty of Computers and Artificial
-                Intelligence
-              </p>
-              <p class="timeline-date">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                  <line x1="16" y1="2" x2="16" y2="6" />
-                  <line x1="8" y1="2" x2="8" y2="6" />
-                  <line x1="3" y1="10" x2="21" y2="10" />
-                </svg>
-                Expected Graduation: 2027
-              </p>
-              <p class="timeline-desc">
-                Pursuing a degree in Software Engineering with focus on
-                programming fundamentals, data structures, OOP, and software
-                development principles.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot timeline-dot--training"></div>
-            <div class="timeline-card">
-              <div class="timeline-badge timeline-badge--training">
-                Training
-              </div>
-              <h3 class="timeline-title">Data Engineering Track</h3>
-              <p class="timeline-org">
-                Digital Egypt Pioneers Initiative (DEPI)
-              </p>
-              <p class="timeline-date">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                  <line x1="16" y1="2" x2="16" y2="6" />
-                  <line x1="8" y1="2" x2="8" y2="6" />
-                  <line x1="3" y1="10" x2="21" y2="10" />
-                </svg>
-                Nov 28, 2025 – Ongoing
-              </p>
-              <p class="timeline-desc">
-                Intensive program focused on databases, backend fundamentals,
-                and data processing concepts. Gaining hands-on experience with
-                data engineering tools and workflows.
-              </p>
-              <span class="timeline-status">● Ongoing</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Languages -->
-        <div class="languages-section">
-          <h3 class="languages-title">Languages</h3>
-          <div class="languages-grid">
-            <div class="lang-card">
-              <span class="lang-flag">🇪🇬</span>
-              <span class="lang-name">Arabic</span>
-              <span class="lang-level lang-level--native">Native</span>
-            </div>
-            <div class="lang-card">
-              <span class="lang-flag">🇬🇧</span>
-              <span class="lang-name">English</span>
-              <span class="lang-level lang-level--a2">A2</span>
-            </div>
-            <div class="lang-card">
-              <span class="lang-flag">🇩🇪</span>
-              <span class="lang-name">German</span>
-              <span class="lang-level lang-level--a2">A2</span>
-            </div>
-          </div>
+        <div class="code-body">
+          <span class="code-keyword">class</span> <span class="code-function">BackendEngineer</span>:<br/>
+          &nbsp;&nbsp;<span class="code-keyword">def</span> <span class="code-function">__init__</span>(self):<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;self.name = <span class="code-string">"Mohamed Ekramy"</span><br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;self.core_stack = [<span class="code-string">"Python"</span>, <span class="code-string">"C#"</span>, <span class="code-string">"ASP.NET Core"</span>, <span class="code-string">"SQL"</span>]<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;self.status = <span class="code-string">"Building Scalable Backend Systems"</span><br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;self.training = <span class="code-string">"DEPI Data Engineering Track"</span><br/><br/>
+          &nbsp;&nbsp;<span class="code-keyword">def</span> <span class="code-function">get_goal</span>(self):<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-string">"Deliver high-performance APIs & data pipelines"</span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ========== CONTACT ========== -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">05 / Contact</span>
-          <h2 class="section-title">Get In Touch</h2>
-          <p class="section-subtitle">
-            I'm currently looking for internship opportunities. Whether you have
-            a question or just want to say hi, feel free to reach out!
+  <!-- ========== ABOUT ========== -->
+  <section class="section section-alt reveal" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">01 / About Me</span>
+        <h2 class="section-title">Architecting Backend Logic & Data Pipelines</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a <strong>Software Engineering student at Assiut National University</strong> (expected graduation 2027) with a deep passion for backend architecture, data persistence, and API design. 
           </p>
+          <p>
+            My engineering work revolves around solving complex real-world problems. Whether building full-stack applications with <strong>ASP.NET Core MVC, C#, and SQL Server</strong> or lightweight zero-shot classification REST APIs with <strong>Python and Flask</strong>, I prioritize clean code structure, security, and performance.
+          </p>
+          <p>
+            Through the <strong>Digital Egypt Pioneers Program (DEPI) Data Engineering Track</strong>, I am actively honing my skills in ETL concepts, database schema design, and large-scale data workflows to bridge backend engineering with data infrastructure.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-value">3.76</div>
+              <div class="stat-label">CGPA / 4.00</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">8+</div>
+              <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">DEPI</div>
+              <div class="stat-label">Data Engineering</div>
+            </div>
+          </div>
         </div>
-        <div class="contact-grid">
-          <a
-            href="mailto:ekamomo303@gmail.com"
-            class="contact-card"
-            id="contact-email"
-          >
-            <div class="contact-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                />
-                <polyline points="22,6 12,13 2,6" />
-              </svg>
-            </div>
-            <div class="contact-info">
-              <span class="contact-label">Email</span>
-              <span class="contact-value">ekamomo303@gmail.com</span>
-            </div>
-            <svg
-              class="contact-arrow"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <line x1="7" y1="17" x2="17" y2="7" />
-              <polyline points="7 7 17 7 17 17" />
-            </svg>
-          </a>
 
-          <a href="tel:+201007111002" class="contact-card" id="contact-phone">
-            <div class="contact-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                />
-              </svg>
+        <div class="about-highlight-box">
+          <h3 class="highlight-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Core Engineering Principles
+          </h3>
+          <div class="highlight-list">
+            <div class="highlight-item">
+              <span class="highlight-icon">✓</span>
+              <span><strong>Robust Authentication:</strong> Implementing OAuth2, Identity 2FA, JWT, and role-based access control.</span>
             </div>
-            <div class="contact-info">
-              <span class="contact-label">Phone</span>
-              <span class="contact-value">+20 100 711 1002</span>
+            <div class="highlight-item">
+              <span class="highlight-icon">✓</span>
+              <span><strong>Data Modeling:</strong> Designing relational EF Core schemas and containerized SQL/NoSQL databases.</span>
             </div>
-            <svg
-              class="contact-arrow"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <line x1="7" y1="17" x2="17" y2="7" />
-              <polyline points="7 7 17 7 17 17" />
-            </svg>
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/mohamed-ekramy25"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contact-card"
-            id="contact-linkedin"
-          >
-            <div class="contact-icon contact-icon--linkedin">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                />
-              </svg>
+            <div class="highlight-item">
+              <span class="highlight-icon">✓</span>
+              <span><strong>Algorithmic Thinking:</strong> Applying compilers/parsers concepts, ML classification pipelines, and virtual file systems.</span>
             </div>
-            <div class="contact-info">
-              <span class="contact-label">LinkedIn</span>
-              <span class="contact-value">mohamed-ekramy25</span>
+            <div class="highlight-item">
+              <span class="highlight-icon">✓</span>
+              <span><strong>Continuous Growth:</strong> Deepening hands-on data engineering & pipeline deployment capabilities.</span>
             </div>
-            <svg
-              class="contact-arrow"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <line x1="7" y1="17" x2="17" y2="7" />
-              <polyline points="7 7 17 7 17 17" />
-            </svg>
-          </a>
-
-          <a
-            href="https://github.com/Mo7amed-Ekramy"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contact-card"
-            id="contact-github"
-          >
-            <div class="contact-icon contact-icon--github">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                />
-              </svg>
-            </div>
-            <div class="contact-info">
-              <span class="contact-label">GitHub</span>
-              <span class="contact-value">Mo7amed-Ekramy</span>
-            </div>
-            <svg
-              class="contact-arrow"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <line x1="7" y1="17" x2="17" y2="7" />
-              <polyline points="7 7 17 7 17 17" />
-            </svg>
-          </a>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ========== FOOTER ========== -->
-    <footer class="footer">
-      <div class="container">
-        <p class="footer-text">
-          Designed &amp; Built by <strong>Mohamed Ekramy</strong> · 2026
+  <!-- ========== SKILLS ========== -->
+  <section class="section reveal" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">02 / Technical Skills</span>
+        <h2 class="section-title">Toolbelt & Engineering Capabilities</h2>
+        <p class="section-subtitle">Categorized technologies and frameworks I use to build scalable systems.</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Programming Languages -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="skill-category-title">Programming Languages</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge-item">Python</span>
+            <span class="badge-item">C#</span>
+            <span class="badge-item">C++</span>
+            <span class="badge-item">SQL</span>
+            <span class="badge-item">HTML5</span>
+            <span class="badge-item">CSS3</span>
+          </div>
+        </div>
+
+        <!-- Backend Technologies -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            </div>
+            <h3 class="skill-category-title">Backend Technologies</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge-item">ASP.NET Core MVC</span>
+            <span class="badge-item">Flask</span>
+            <span class="badge-item">Express.js</span>
+            <span class="badge-item">REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3 class="skill-category-title">Databases</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge-item">SQL Server</span>
+            <span class="badge-item">SQLite</span>
+            <span class="badge-item">MongoDB</span>
+            <span class="badge-item">MySQL</span>
+          </div>
+        </div>
+
+        <!-- Frameworks & Libraries -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="skill-category-title">Frameworks & Libraries</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge-item">Entity Framework Core</span>
+            <span class="badge-item">Flask-SQLAlchemy</span>
+            <span class="badge-item">Pandas</span>
+            <span class="badge-item">NumPy</span>
+            <span class="badge-item">scikit-learn</span>
+          </div>
+        </div>
+
+        <!-- CS Fundamentals -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="skill-category-title">CS Fundamentals</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge-item">OOP</span>
+            <span class="badge-item">Data Structures</span>
+            <span class="badge-item">Algorithms</span>
+            <span class="badge-item">Compiler Design</span>
+            <span class="badge-item">ETL Concepts</span>
+          </div>
+        </div>
+
+        <!-- Tools & Infrastructure -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.9 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="skill-category-title">Tools & Infrastructure</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge-item">Git</span>
+            <span class="badge-item">GitHub</span>
+            <span class="badge-item">.NET 8</span>
+            <span class="badge-item">Docker</span>
+            <span class="badge-item">docker-compose</span>
+            <span class="badge-item">Mermaid diagrams</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED PROJECTS ========== -->
+  <section class="section section-alt reveal" id="featured-projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">03 / Projects</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Deep dive into key applications spanning compilers, full-stack systems, machine learning, and AI extensions.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-header-meta">
+              <span class="project-type-badge">Compiler & Web IDE</span>
+            </div>
+            <h3 class="project-title">PUBG Language Transpiler & Web IDE</h3>
+            <p class="project-desc">
+              Built a complete transpiler pipeline (tokenizer, parser, symbol-table semantic analyzer, code generator) converting a custom language into executable Python.
+            </p>
+            <div class="project-achievement">
+              <strong>Key Highlight:</strong> Visualizes compiler AST & stage output in real time inside a React/Vite web IDE with dedicated diagnostic tabs.
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Vite</span>
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">AST Compiler</span>
+            </div>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-outline btn-sm btn-view-details" data-project="pubg-transpiler">View Details</button>
+            <a href="https://github.com/Mo7amed-Ekramy" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-header-meta">
+              <span class="project-type-badge">Enterprise Backend</span>
+            </div>
+            <h3 class="project-title">College Attendance System</h3>
+            <p class="project-desc">
+              A robust .NET 8 ASP.NET Core MVC application integrated with Entity Framework Core and SQL Server LocalDB for institutional attendance monitoring.
+            </p>
+            <div class="project-achievement">
+              <strong>Key Highlight:</strong> Configured full ASP.NET Core Identity across 8 flows, including 2FA, email verification, and production security policies (HSTS, HTTPS redirection).
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">ASP.NET Core 8</span>
+              <span class="tech-tag">EF Core</span>
+              <span class="tech-tag">SQL Server</span>
+              <span class="tech-tag">Identity 2FA</span>
+            </div>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-outline btn-sm btn-view-details" data-project="attendance-system">View Details</button>
+            <a href="https://github.com/Mo7amed-Ekramy" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-header-meta">
+              <span class="project-type-badge">AI Chrome Extension</span>
+            </div>
+            <h3 class="project-title">HealthGuard — AI Fact Checker Extension</h3>
+            <p class="project-desc">
+              Manifest V3 Chrome extension that captures selected web page medical claims for automated AI fact-checking against zero-shot NLP models.
+            </p>
+            <div class="project-achievement">
+              <strong>Key Highlight:</strong> Built a Flask REST API using HuggingFace inference (`facebook/bart-large-mnli`) with rule-based fallback returning 5 structured verification fields per claim.
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Chrome Extension API</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">HuggingFace API</span>
+              <span class="tech-tag">React</span>
+            </div>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-outline btn-sm btn-view-details" data-project="healthguard">View Details</button>
+            <a href="https://github.com/Mo7amed-Ekramy" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub</a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-header-meta">
+              <span class="project-type-badge">Full-Stack & DevOps</span>
+            </div>
+            <h3 class="project-title">Librarium — Library Management System</h3>
+            <p class="project-desc">
+              Full-stack Flask library platform supporting admin and member roles with 7 catalog operations, dynamic search, borrowing workflows, and availability tracking.
+            </p>
+            <div class="project-achievement">
+              <strong>Key Highlight:</strong> Containerized application with Docker & docker-compose; documented full relational schema using ERD, DFD, and sequence diagrams.
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Flask-SQLAlchemy</span>
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-outline btn-sm btn-view-details" data-project="librarium">View Details</button>
+            <a href="https://github.com/Mo7amed-Ekramy" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub</a>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-header-meta">
+              <span class="project-type-badge">Machine Learning Pipeline</span>
+            </div>
+            <h3 class="project-title">Heart Disease Prediction Pipeline</h3>
+            <p class="project-desc">
+              End-to-end ML classification pipeline built on the UCI Heart Disease dataset (1,025 records, 13 clinical features) with feature scaling and IQR outlier detection.
+            </p>
+            <div class="project-achievement">
+              <strong>Key Highlight:</strong> Benchmarked 5 classifiers and selected Random Forest as top performer, achieving 92.68% accuracy and 0.93 F1-score.
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">scikit-learn</span>
+              <span class="tech-tag">Random Forest</span>
+            </div>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-outline btn-sm btn-view-details" data-project="heart-disease">View Details</button>
+            <a href="https://github.com/Mo7amed-Ekramy" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== OTHER PROJECTS ========== -->
+  <section class="section reveal" id="other-projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">04 / Additional Work</span>
+        <h2 class="section-title">Other Engineering Projects</h2>
+      </div>
+
+      <div class="other-projects-grid">
+        
+        <!-- Other 1 -->
+        <div class="other-card">
+          <div>
+            <h3 class="other-title">Node.js AJAX Library Platform</h3>
+            <p class="other-desc">
+              Express.js & MongoDB REST backend featuring 9 API endpoints, JWT + bcrypt security, and an interactive AJAX administrative dashboard.
+            </p>
+          </div>
+          <div class="project-tech-tags">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">JWT</span>
+          </div>
+        </div>
+
+        <!-- Other 2 -->
+        <div class="other-card">
+          <div>
+            <h3 class="other-title">MiniFAT Virtual File System Shell</h3>
+            <p class="other-desc">
+              Built a 1MB virtual FAT file system in Python (1,024 × 1KB clusters) featuring an interactive shell supporting 13 custom commands (cd, ls, mkdir, cp, mv, rm, etc.).
+            </p>
+          </div>
+          <div class="project-tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">FAT File System</span>
+            <span class="tech-tag">CLI Shell</span>
+          </div>
+        </div>
+
+        <!-- Other 3 -->
+        <div class="other-card">
+          <div>
+            <h3 class="other-title">AI Search & Game Algorithm Projects</h3>
+            <p class="other-desc">
+              Implemented 4 classic pathfinding search algorithms (Greedy Best-First, A*, Hill Climbing, Genetic Algorithm) plus a Minimax Tic-Tac-Toe AI across 3 difficulty levels.
+            </p>
+          </div>
+          <div class="project-tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">A* Search</span>
+            <span class="tech-tag">Minimax AI</span>
+            <span class="tech-tag">Algorithms</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION & CERTIFICATIONS ========== -->
+  <section class="section section-alt reveal" id="education-certifications">
+    <div class="container">
+      <div class="timeline-section-grid">
+        
+        <!-- Column 1: Education -->
+        <div>
+          <h2 class="timeline-column-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            Academic Education
+          </h2>
+          <div class="timeline-cards">
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <span class="timeline-role">B.Sc. in Software Engineering</span>
+                <span class="timeline-date">Expected 2027</span>
+              </div>
+              <div class="timeline-org">Assiut National University</div>
+              <p class="timeline-desc">
+                Faculty of Computers and Artificial Intelligence. Specialized study in data structures, algorithms, object-oriented software design, software engineering methodologies, and database systems.
+              </p>
+              <div class="gpa-badge">CGPA: 3.76 / 4.00</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Certifications & Training -->
+        <div>
+          <h2 class="timeline-column-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            Certifications & Training
+          </h2>
+          <div class="timeline-cards">
+            
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <span class="timeline-role">DEPI — Data Engineering Track</span>
+                <span class="timeline-date">Dec 2025 – Jul 2026</span>
+              </div>
+              <div class="timeline-org">Digital Egypt Pioneers Program</div>
+              <p class="timeline-desc">
+                Practical training covering database design, relational SQL optimization, ETL concepts, and data engineering workflows to build high-performance data systems.
+              </p>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <span class="timeline-role">NTI — Python Intensive Training</span>
+                <span class="timeline-date">Jun 2026 – Jul 2026</span>
+              </div>
+              <div class="timeline-org">National Telecommunication Institute</div>
+              <p class="timeline-desc">
+                Intensive program focusing on core Python programming, advanced OOP patterns, algorithmic problem-solving, and practical application design.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CAREER TIMELINE ========== -->
+  <section class="section reveal" id="timeline">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">05 / Journey</span>
+        <h2 class="section-title">Career & Growth Roadmap</h2>
+      </div>
+
+      <div class="career-track-container">
+        
+        <div class="track-item">
+          <div class="track-dot active"></div>
+          <h3 class="track-title">B.Sc. Software Engineering Student</h3>
+          <p class="track-sub">Assiut National University (2023 - Present) · CGPA 3.76</p>
+        </div>
+
+        <div class="track-item">
+          <div class="track-dot active"></div>
+          <h3 class="track-title">Digital Egypt Pioneers Program (DEPI)</h3>
+          <p class="track-sub">Data Engineering Specialization (Dec 2025 – Jul 2026)</p>
+        </div>
+
+        <div class="track-item">
+          <div class="track-dot active"></div>
+          <h3 class="track-title">National Telecommunication Institute (NTI)</h3>
+          <p class="track-sub">Python Intensive Training & Problem Solving (Jun 2026 – Jul 2026)</p>
+        </div>
+
+        <div class="track-item">
+          <div class="track-dot active"></div>
+          <h3 class="track-title">Seeking Backend Development / Data Engineering Internship</h3>
+          <p class="track-sub">Ready to apply backend fundamentals, REST APIs, and database architecture to engineering teams.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section section-alt reveal" id="contact">
+    <div class="container contact-wrapper">
+      
+      <div class="contact-cta-banner">
+        <h2 class="cta-heading">Let's Build Something Great Together</h2>
+        <p class="cta-text">
+          I'm currently seeking Backend Development and Data Engineering internship opportunities. If you are looking for a dedicated engineer with strong fundamentals in APIs, C#, Python, and SQL, feel free to reach out!
         </p>
+        <a href="mailto:mohamedekramy2510@gmail.com" class="btn btn-primary">Send Me an Email</a>
       </div>
-    </footer>
 
-    <script src="script.js"></script>
-  </body>
+      <div class="contact-grid">
+        <a href="mailto:mohamedekramy2510@gmail.com" class="contact-card">
+          <div class="contact-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">mohamedekramy2510@gmail.com</span>
+        </a>
+
+        <a href="tel:+201007111002" class="contact-card">
+          <div class="contact-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+20 100 711 1002</span>
+        </a>
+
+        <a href="https://linkedin.com/in/mohamed-ekramy25" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">mohamed-ekramy25</span>
+        </a>
+
+        <a href="https://github.com/Mo7amed-Ekramy" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">Mo7amed-Ekramy</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-name">Mohamed Ekramy Sebak</div>
+      <div class="footer-role">Backend Developer · Software Engineering Student</div>
+      <div class="footer-links">
+        <a href="https://github.com/Mo7amed-Ekramy" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="https://linkedin.com/in/mohamed-ekramy25" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <a href="mailto:mohamedekramy2510@gmail.com" class="footer-link">Email</a>
+      </div>
+      <p class="footer-copy">Open to Backend Development & Data Engineering Internship Opportunities</p>
+    </div>
+  </footer>
+
+  <!-- ========== MODAL DIALOG CONTAINER ========== -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-container">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <h2 class="modal-title" id="modal-title">Project Title</h2>
+      <div class="modal-subtitle" id="modal-tech">Tech Stack</div>
+      
+      <div class="modal-section">
+        <h4 class="modal-section-title">Architectural Summary</h4>
+        <p class="modal-text" id="modal-desc">Project details description...</p>
+      </div>
+
+      <div class="modal-section">
+        <h4 class="modal-section-title">Key Technical Achievements</h4>
+        <ul class="modal-list" id="modal-achievements">
+          <!-- Populated dynamically -->
+        </ul>
+      </div>
+
+      <div class="project-actions" style="margin-top: 2rem;">
+        <a href="https://github.com/Mo7amed-Ekramy" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Explore Repository</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
