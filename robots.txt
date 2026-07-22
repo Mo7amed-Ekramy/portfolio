@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mo7amed-ekramy.github.io/portfolio/sitemap.xml
