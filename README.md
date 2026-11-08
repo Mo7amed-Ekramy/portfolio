@@ -8,7 +8,7 @@ An editorial portfolio of seven projects selected by Mohamed: Masahati, HealthGu
 python -m http.server 8775
 ```
 
-Open http://localhost:8775. No build step is needed. Project notes load from `project-data.json`.
+Open http://localhost:8775. No build step is needed. Project notes are embedded in `index.html`; `project-data.json` contains the matching source data.
 
 ## Design
 
