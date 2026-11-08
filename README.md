@@ -1,24 +1,17 @@
 # Mohamed Ekramy Portfolio
 
-A static portfolio focused on full-stack projects using React, Python, Node.js, and databases.
+An editorial portfolio of seven projects selected by Mohamed: Masahati, HealthGuard, PUBG Language Transpiler, AI Search & Game Algorithms, College Attendance System, Librarium, and MiniFAT.
 
-## Preview locally
+## Run
 
 ```sh
-python -m http.server 8765
+python -m http.server 8775
 ```
 
-Open http://localhost:8765. A local HTTP server is required for project notes, which read `project-data.json`.
+Open http://localhost:8775. No build step is needed. Project notes load from `project-data.json`.
 
-## Content
+## Design
 
-- `index.html`: accessible page structure and project cards.
-- `style.css`: responsive forest-green and mint visual design.
-- `script.js`: project filters, native project dialogs, mobile navigation, and email copying.
-- `project-data.json`: project notes and verified source/demo links.
-- `assets/Mohamed_Ekramy_CV.pdf`: downloadable resume.
-- `assets/social-preview.png`: social sharing image.
+Warm paper, charcoal, orange and lime; project-specific illustrations; a Masahati design preview using fictional data; accessible project dialogs, filtering, mobile navigation, and reduced-motion support. Source and private-repository links are labeled explicitly. No unavailable demo is represented as live.
 
-No build step or runtime secrets are required. Deploy the repository root as a static Vercel project. Project notes identify private sources and simulated demos.
-
-The canonical production URL is https://mohamed-ekramy-portfolio.vercel.app/.
+The visual workflow follows the local `.agent` UI/UX, frontend and visual validation guidance. The site remains a static deployment on Vercel.

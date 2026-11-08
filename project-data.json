@@ -1,200 +1,221 @@
 [
   {
-    "id": "book-buddy",
-    "name": "Book Buddy",
+    "id": "masahati",
+    "name": "Masahati",
+    "subtitle": "A workspace for the spaces we work in.",
+    "type": "Full-stack product",
     "category": "fullstack",
-    "label": "Full-stack library platform",
-    "stack": [
-      "React",
-      "TypeScript",
-      "Express",
-      "MySQL"
-    ],
-    "description": "A library platform that connects a React interface to book, loan, authentication, and notification APIs.",
-    "url": "https://github.com/Mo7amed-Ekramy/library-management-system",
-    "flow": [
-      "React interface",
-      "Express API",
-      "MySQL"
-    ],
-    "highlights": [
-      "Connected catalog search, borrowing, returns, and account screens to REST endpoints.",
-      "Implemented JWT authentication and user, manager, and admin access rules.",
-      "Used database transactions to update loan records, book availability, and notifications together."
-    ],
-    "note": "Academic project. Source code is public; a hosted demo is not provided."
-  },
-  {
-    "id": "librarium",
-    "name": "Librarium",
-    "category": "fullstack",
-    "label": "Python web application",
+    "status": "In development",
+    "accent": "lime",
+    "cover": "masahati.webp",
     "stack": [
       "Python",
-      "Flask",
-      "SQLite",
-      "Docker"
+      "Django",
+      "HTMX",
+      "PostgreSQL"
     ],
-    "description": "A library application covering the journey from finding a book to borrowing it and returning it.",
-    "url": "https://github.com/Mo7amed-Ekramy/flask_project",
-    "flow": [
-      "Jinja templates",
-      "Flask routes",
-      "SQLite"
-    ],
+    "description": "A platform for managing study and coworking spaces: rooms, visits, bookings, checkout, and day-to-day operations.",
     "highlights": [
-      "Built member and admin workflows with hashed-password authentication and route guards.",
-      "Implemented catalog search, filtering, loan history, due dates, and overdue-loan views.",
-      "Packaged the app with Docker Compose and documented the data model and system flows."
+      "Building owner, staff, customer, and platform workflows with Django templates and HTMX.",
+      "Connecting seating, timed visits, bookings, checkout, and cash review to PostgreSQL-backed business logic.",
+      "Developing the product's interface alongside permission checks, operation tracking, and automated workflow tests."
     ],
-    "note": "Academic project with local demo setup documented in the repository."
+    "note": "An ongoing product. The image is a design preview using fictional demonstration data. Production hosting is still being prepared.",
+    "repo": "https://github.com/Mo7amed-Ekramy/masahati",
+    "repo_label": "Private repository",
+    "private": true,
+    "flow": [
+      "Django templates + HTMX",
+      "Application workflows",
+      "PostgreSQL"
+    ]
   },
   {
     "id": "healthguard",
     "name": "HealthGuard",
+    "subtitle": "Selected text. Structured analysis.",
+    "type": "Chrome extension + API",
     "category": "fullstack",
-    "label": "Browser extension + Python API",
+    "status": "Educational prototype",
+    "accent": "purple",
+    "cover": "healthguard.svg",
     "stack": [
       "React",
+      "JavaScript",
       "Manifest V3",
       "Flask",
       "Hugging Face"
     ],
-    "description": "A Chrome extension prototype that sends selected webpage claims to a Python analysis API.",
-    "url": "",
+    "description": "A Chrome extension that captures selected medical claims from webpages and sends them to a Python analysis API.",
+    "highlights": [
+      "Developed a Manifest V3 extension with content scripts, a background worker, and a React popup.",
+      "Integrated a Flask REST API with optional facebook/bart-large-mnli zero-shot classification and a rule-based fallback.",
+      "Implemented selection, loading, result, and error states, and documented the frontend-backend API contract."
+    ],
+    "note": "Educational prototype with an optional inference service and a mock fallback. It is not a clinically validated medical fact-checking system.",
+    "repo": "https://github.com/Mo7amed-Ekramy/Medical-Fact-Checker",
+    "repo_label": "Private repository",
+    "private": true,
     "flow": [
-      "Selected text",
+      "Webpage selection",
       "React extension",
       "Flask analysis API"
-    ],
-    "highlights": [
-      "Built the selection-to-popup flow using Chrome content scripts and a background service worker.",
-      "Integrated optional Hugging Face zero-shot classification with a local rule-based fallback.",
-      "Handled empty selection, loading, results, and server errors in the React popup."
-    ],
-    "note": "Educational prototype. Analysis uses an optional inference service or a mock fallback; it is not clinically validated. Source repository is private."
+    ]
   },
   {
-    "id": "daemon",
-    "name": "Daemon",
-    "category": "interfaces",
-    "label": "Interactive workspace demo",
-    "stack": [
-      "React",
-      "Vite",
-      "Browser storage"
-    ],
-    "description": "A marketing workspace demo for project conversations, campaign planning, and creative previews.",
-    "url": "https://github.com/Mo7amed-Ekramy/deamonDemo",
-    "demo": "https://daemon-frontend-nine.vercel.app/",
-    "flow": [
-      "Workspace UI",
-      "Campaign state",
-      "Browser storage"
-    ],
-    "highlights": [
-      "Created an interactive frontend workspace with project conversations and a shared campaign plan.",
-      "Added campaign-map and creative-preview views.",
-      "Kept workspace state in the browser for a self-contained demonstration."
-    ],
-    "note": "Frontend demo. Agent responses, account flows, approvals, and publishing are simulated."
-  },
-  {
-    "id": "rental",
-    "name": "Rental Countdown",
-    "category": "interfaces",
-    "label": "Mobile-first browser tool",
-    "stack": [
-      "JavaScript",
-      "CSS",
-      "localStorage"
-    ],
-    "description": "A rental timer interface with active sessions, completion confirmation, and locally saved state.",
-    "url": "https://github.com/Mo7amed-Ekramy/Rental",
-    "flow": [
-      "Rental form",
-      "Countdown timers",
-      "localStorage"
-    ],
-    "highlights": [
-      "Built a mobile-first rental flow with persistent countdown timers.",
-      "Added completion confirmation, sound and vibration alerts where supported.",
-      "Supported adding games with uploaded photos and resetting completed rentals for the day."
-    ],
-    "note": "Static browser application. Data is saved on the current device.",
-    "demo": "https://rental-nine-inky.vercel.app/"
-  },
-  {
-    "id": "flight-delay",
-    "name": "Flight Delay Explorer",
-    "category": "data",
-    "label": "Data application",
+    "id": "pubg",
+    "name": "PUBG Language Transpiler and Web IDE",
+    "subtitle": "A language, from tokens to execution.",
+    "type": "Compiler + Web IDE",
+    "category": "systems",
+    "status": "Academic project",
+    "accent": "orange",
+    "cover": "pubg.webp",
     "stack": [
       "Python",
-      "Streamlit",
-      "scikit-learn",
-      "SHAP"
+      "React",
+      "Vite",
+      "REST API"
     ],
-    "description": "A dashboard for exploring historical flight predictions, risk scores, and feature explanations.",
-    "url": "https://github.com/Mo7amed-Ekramy/Delay-Prediction",
-    "flow": [
-      "Local artifacts",
-      "Model pipeline",
-      "Streamlit views"
-    ],
+    "description": "A custom-language transpiler and web IDE that makes the compilation pipeline visible, from tokenization to generated Python.",
     "highlights": [
-      "Organized views for model comparison, historical predictions, and high-risk flights.",
-      "Added a flight simulator that uses a saved model pipeline.",
-      "Presented feature importance and SHAP explanations with cached local artifacts."
+      "Built a tokenizer, parser, semantic analyzer, and code generator covering eight language constructs.",
+      "Implemented symbol-table-based analysis with six categories of static checks, including type checking and undeclared identifiers.",
+      "Designed a React/Vite IDE with dedicated views for compiler stages, output, and errors."
     ],
-    "note": "Educational model and dashboard. No production impact or predictive accuracy is claimed here."
+    "note": "Custom language and an interactive web IDE. The repository link opens the final implementation branch.",
+    "repo": "https://github.com/MohamedKhedrawy/pubg/tree/final",
+    "repo_label": "Repository (access required)",
+    "private": true,
+    "flow": [
+      "Tokenize + parse",
+      "Semantic analysis",
+      "Generate Python"
+    ]
   },
   {
-    "id": "viva-hurghada",
-    "name": "Viva Hurghada",
-    "category": "interfaces",
-    "label": "Travel landing page",
+    "id": "ai-search",
+    "name": "AI Search and Game Algorithm Projects",
+    "subtitle": "Different paths. Better decisions.",
+    "type": "Search + game AI",
+    "category": "systems",
+    "status": "Academic projects",
+    "accent": "blue",
+    "cover": "search.svg",
     "stack": [
-      "HTML",
-      "CSS",
-      "JavaScript"
+      "Python",
+      "A*",
+      "Greedy Search",
+      "Genetic Algorithm",
+      "Minimax"
     ],
-    "description": "A travel website presenting Hurghada tours and excursions, with booking inquiries handled through WhatsApp.",
-    "url": "https://github.com/Mo7amed-Ekramy/Hurghada_With_Waleed",
-    "demo": "https://vivahurghada.fun/",
-    "flow": [
-      "Tour catalog",
-      "Booking inquiry",
-      "WhatsApp"
-    ],
+    "description": "Pathfinding and game-playing projects exploring how search strategies navigate a space and choose a move.",
     "highlights": [
-      "Built a responsive interface for browsing tours and excursion information.",
-      "Connected booking inquiries to WhatsApp.",
-      "Added site icons and browser metadata."
+      "Applied Greedy Best-First Search, A*, Hill Climbing, and a Genetic Algorithm to pathfinding.",
+      "Developed a Minimax Tic-Tac-Toe AI with three difficulty levels."
     ],
-    "note": "Public travel website. Booking inquiries are sent through WhatsApp; the site does not process online payments."
+    "note": "Experiments in contrasting search strategies and choosing moves in adversarial games.",
+    "repo": "",
+    "repo_label": "",
+    "private": false,
+    "flow": [
+      "Define the state",
+      "Explore the choices",
+      "Find a path or move"
+    ]
   },
   {
-    "id": "edumad",
-    "name": "Edumad",
-    "category": "interfaces",
-    "label": "HTML and CSS practice",
+    "id": "attendance",
+    "name": "College Attendance System",
+    "subtitle": "Identity at the heart of the application.",
+    "type": "Web application",
+    "category": "fullstack",
+    "status": "Academic project",
+    "accent": "peach",
+    "cover": "attendance.svg",
     "stack": [
-      "HTML",
-      "CSS"
+      "C#",
+      ".NET 8",
+      "ASP.NET Core MVC",
+      "Identity",
+      "EF Core",
+      "SQL Server"
     ],
-    "description": "An educational-platform landing page exercise with static content sections and visual sign-in controls.",
-    "url": "https://github.com/Mo7amed-Ekramy/project-1",
-    "demo": "https://edumad-ekramy.vercel.app/",
-    "flow": [
-      "HTML content",
-      "CSS layouts",
-      "Static prototype"
-    ],
+    "description": "An attendance-application foundation with account management and Identity workflows.",
     "highlights": [
-      "Created static sections for community features, courses, and team content.",
-      "Practiced page layout and styling with local images and icon fonts."
+      "Implemented Identity flows including registration, email confirmation, password reset, and two-factor authentication.",
+      "Used ASP.NET Core MVC, Entity Framework Core, and SQL Server LocalDB.",
+      "Applied HTTPS redirection, exception handling, and HSTS, with responsive Razor Pages and Bootstrap."
     ],
-    "note": "Early frontend practice project. Navigation placeholders and sign-in controls are visual only; this demo has no account system."
+    "note": "Identity and account workflows form the application foundation. The repository includes the local setup.",
+    "repo": "https://github.com/Mo7amed-Ekramy/Attendance-System",
+    "repo_label": "View source",
+    "private": false,
+    "flow": [
+      "Razor interface",
+      "MVC + Identity",
+      "SQL Server"
+    ]
+  },
+  {
+    "id": "librarium",
+    "name": "Librarium",
+    "subtitle": "The complete borrowing journey.",
+    "type": "Python web application",
+    "category": "fullstack",
+    "status": "Academic project",
+    "accent": "mint",
+    "cover": "librarium.svg",
+    "stack": [
+      "Python",
+      "Flask",
+      "SQLite",
+      "SQLAlchemy",
+      "Docker"
+    ],
+    "description": "A library management application with member and admin roles, catalog search, filtering, and borrowing workflows.",
+    "highlights": [
+      "Built member and admin workflows with hashed-password authentication and protected routes.",
+      "Implemented catalog search and filtering, borrowing and returns, loan history, and due dates.",
+      "Packaged the application with Docker Compose and documented the system with ERD, DFD, and sequence diagrams."
+    ],
+    "note": "Academic project. Local setup is documented in the repository; a persistent hosted database is still needed for a durable public deployment.",
+    "repo": "https://github.com/Mo7amed-Ekramy/flask_project",
+    "repo_label": "View source",
+    "private": false,
+    "flow": [
+      "Jinja templates",
+      "Flask routes",
+      "SQLite + SQLAlchemy"
+    ]
+  },
+  {
+    "id": "minifat",
+    "name": "MiniFAT Virtual File System Shell",
+    "subtitle": "A small disk. A complete set of ideas.",
+    "type": "Systems + CLI",
+    "category": "systems",
+    "status": "Academic project",
+    "accent": "yellow",
+    "cover": "minifat.svg",
+    "stack": [
+      "Python",
+      "File allocation tables",
+      "CLI"
+    ],
+    "description": "A 1 MB virtual FAT file system in Python, exposed through a 13-command interactive shell.",
+    "highlights": [
+      "Implemented a virtual file system backed by a 1 MB virtual disk.",
+      "Built a 13-command interactive shell for working with the virtual file system."
+    ],
+    "note": "Systems project retained from the original CV. It is an interactive shell rather than a hosted web application.",
+    "repo": "",
+    "repo_label": "",
+    "private": false,
+    "flow": [
+      "Shell commands",
+      "File allocation table",
+      "Virtual disk"
+    ]
   }
 ]

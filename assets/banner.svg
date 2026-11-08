@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520">
-<rect width="1600" height="520" fill="#142a29"/><path d="M1100 0V520M1250 0V520M1400 0V520M0 130H1600M0 260H1600M0 390H1600" stroke="#254341"/>
-<rect x="85" y="72" width="84" height="46" rx="23" fill="#bce5bf"/><text x="103" y="103" font-family="Consolas,monospace" font-size="23" fill="#142a29">ME.</text>
-<text x="85" y="240" font-family="Arial,sans-serif" font-size="91" font-weight="700" fill="#f3f5eb">Mohamed Ekramy</text>
-<text x="90" y="309" font-family="Arial,sans-serif" font-size="37" fill="#bce5bf">Full-stack Developer</text>
-<text x="90" y="404" font-family="Consolas,monospace" font-size="24" fill="#bdcec9">REACT  /  PYTHON  /  NODE.JS</text>
-<g fill="none" stroke="#bce5bf" stroke-width="3"><rect x="1190" y="149" width="250" height="65" rx="12"/><rect x="1190" y="242" width="250" height="65" rx="12"/><rect x="1190" y="335" width="250" height="65" rx="12"/><path d="M1315 214V242M1315 307V335"/></g>
-<g font-family="Consolas,monospace" font-size="22" fill="#edf4ec" text-anchor="middle"><text x="1315" y="190">INTERFACE</text><text x="1315" y="283">API</text><text x="1315" y="376">DATABASE</text></g></svg>
