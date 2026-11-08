@@ -43,6 +43,9 @@ async function showProject(button){
   const p=projects.find(item=>item.id===button.dataset.project);if(!p)throw new Error('Unknown project');
   for(const [id,text] of [['dialog-type',`${p.type} / ${p.status}`],['dialog-title',p.name],['dialog-description',p.description],['dialog-note',p.note]])document.getElementById(id).textContent=text;
   document.querySelector('#dialog-highlights').replaceChildren(...p.highlights.map(text=>{const li=document.createElement('li');li.textContent=text;return li;}));
+  const isMasahati = p.id === 'masahati';
+  document.getElementById('visit-case').hidden = !isMasahati;
+  document.getElementById('standard-project-notes').hidden = isMasahati;
   const flow=[];p.flow.forEach((text,index)=>{if(index){const arrow=document.createElement('b');arrow.textContent='→';arrow.setAttribute('aria-hidden','true');flow.push(arrow);}const span=document.createElement('span');span.textContent=text;flow.push(span);});
   document.querySelector('#dialog-flow').replaceChildren(...flow);
   const links=[];

@@ -15,3 +15,9 @@
 .stack-ribbon{transform:skewY(-1.2deg)}.window-label small{display:block;font-size:11px;line-height:1.6;font-weight:400;letter-spacing:0;color:var(--sub)}.window-label strong{font-size:23px;line-height:1.1}.project-feedback{padding:15px 18px;border:1px solid var(--orange);background:#f8dfd4;font-size:14px;margin-bottom:25px}
 @media(max-width:800px){.ribbon-track{width:auto;animation:none;white-space:normal;flex-wrap:wrap;justify-content:center;gap:10px 18px;font-size:14px;padding:18px}.ribbon-track i{font-size:16px}.ribbon-track span{white-space:nowrap}.window-label small{font-size:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+
+#visit-case p + p { margin-top: .8em; }
+#visit-case figure { margin-top: 1.5rem; }
+#visit-case img { width: 100%; height: auto; border: 1px solid #c7c5bf; }
+#visit-case figcaption { margin-top: .55rem; font-size: .8rem; line-height: 1.5; }
+.about-body p .underline-link { display: inline; margin: 0; font: inherit; }
