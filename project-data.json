@@ -19,7 +19,7 @@
     ],
     "highlights": [
       "Connected catalog search, borrowing, returns, and account screens to REST endpoints.",
-      "Implemented JWT authentication, password hashing, and user, manager, and admin access rules.",
+      "Implemented JWT authentication and user, manager, and admin access rules.",
       "Used database transactions to update loan records, book availability, and notifications together."
     ],
     "note": "Academic project. Source code is public; a hosted demo is not provided."
