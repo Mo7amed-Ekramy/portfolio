@@ -22,8 +22,7 @@
     ],
     "note": "An ongoing product. The image is a design preview using fictional demonstration data. Production hosting is still being prepared.",
     "repo": "https://github.com/Mo7amed-Ekramy/masahati",
-    "repo_label": "Private repository",
-    "private": true,
+    "repo_label": "View source",
     "flow": [
       "Django templates + HTMX",
       "Application workflows",
@@ -54,8 +53,7 @@
     ],
     "note": "Educational prototype with an optional inference service and a mock fallback. It is not a clinically validated medical fact-checking system.",
     "repo": "https://github.com/Mo7amed-Ekramy/Medical-Fact-Checker",
-    "repo_label": "Private repository",
-    "private": true,
+    "repo_label": "View source",
     "flow": [
       "Webpage selection",
       "React extension",
@@ -85,8 +83,7 @@
     ],
     "note": "Custom language and an interactive web IDE. The repository link opens the final implementation branch.",
     "repo": "https://github.com/MohamedKhedrawy/pubg/tree/final",
-    "repo_label": "Repository (access required)",
-    "private": true,
+    "repo_label": "View source",
     "flow": [
       "Tokenize + parse",
       "Semantic analysis",
@@ -117,7 +114,6 @@
     "note": "Experiments in contrasting search strategies and choosing moves in adversarial games.",
     "repo": "",
     "repo_label": "",
-    "private": false,
     "flow": [
       "Define the state",
       "Explore the choices",
@@ -150,7 +146,6 @@
     "note": "Identity and account workflows form the application foundation. The repository includes the local setup.",
     "repo": "https://github.com/Mo7amed-Ekramy/Attendance-System",
     "repo_label": "View source",
-    "private": false,
     "flow": [
       "Razor interface",
       "MVC + Identity",
@@ -182,7 +177,6 @@
     "note": "Academic project. Local setup is documented in the repository; a persistent hosted database is still needed for a durable public deployment.",
     "repo": "https://github.com/Mo7amed-Ekramy/flask_project",
     "repo_label": "View source",
-    "private": false,
     "flow": [
       "Jinja templates",
       "Flask routes",
@@ -211,7 +205,6 @@
     "note": "Systems project retained from the original CV. It is an interactive shell rather than a hosted web application.",
     "repo": "",
     "repo_label": "",
-    "private": false,
     "flow": [
       "Shell commands",
       "File allocation table",

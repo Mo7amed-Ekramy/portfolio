@@ -12,6 +12,6 @@ Open http://localhost:8775. No build step is needed. Project notes are embedded 
 
 ## Design
 
-Warm paper, charcoal, orange and lime; project-specific illustrations; a Masahati design preview using fictional data; accessible project dialogs, filtering, mobile navigation, and reduced-motion support. Source and private-repository links are labeled explicitly. No unavailable demo is represented as live.
+Warm paper, charcoal, orange and lime; project-specific illustrations; a Masahati design preview using fictional data; accessible project dialogs, filtering, mobile navigation, and reduced-motion support. No unavailable demo is represented as live.
 
 The visual workflow follows the local `.agent` UI/UX, frontend and visual validation guidance. The site remains a static deployment on Vercel.
