@@ -1,0 +1,200 @@
+[
+  {
+    "id": "book-buddy",
+    "name": "Book Buddy",
+    "category": "fullstack",
+    "label": "Full-stack library platform",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Express",
+      "MySQL"
+    ],
+    "description": "A library platform that connects a React interface to book, loan, authentication, and notification APIs.",
+    "url": "https://github.com/Mo7amed-Ekramy/library-management-system",
+    "flow": [
+      "React interface",
+      "Express API",
+      "MySQL"
+    ],
+    "highlights": [
+      "Connected catalog search, borrowing, returns, and account screens to REST endpoints.",
+      "Implemented JWT authentication, password hashing, and user, manager, and admin access rules.",
+      "Used database transactions to update loan records, book availability, and notifications together."
+    ],
+    "note": "Academic project. Source code is public; a hosted demo is not provided."
+  },
+  {
+    "id": "librarium",
+    "name": "Librarium",
+    "category": "fullstack",
+    "label": "Python web application",
+    "stack": [
+      "Python",
+      "Flask",
+      "SQLite",
+      "Docker"
+    ],
+    "description": "A library application covering the journey from finding a book to borrowing it and returning it.",
+    "url": "https://github.com/Mo7amed-Ekramy/flask_project",
+    "flow": [
+      "Jinja templates",
+      "Flask routes",
+      "SQLite"
+    ],
+    "highlights": [
+      "Built member and admin workflows with hashed-password authentication and route guards.",
+      "Implemented catalog search, filtering, loan history, due dates, and overdue-loan views.",
+      "Packaged the app with Docker Compose and documented the data model and system flows."
+    ],
+    "note": "Academic project with local demo setup documented in the repository."
+  },
+  {
+    "id": "healthguard",
+    "name": "HealthGuard",
+    "category": "fullstack",
+    "label": "Browser extension + Python API",
+    "stack": [
+      "React",
+      "Manifest V3",
+      "Flask",
+      "Hugging Face"
+    ],
+    "description": "A Chrome extension prototype that sends selected webpage claims to a Python analysis API.",
+    "url": "",
+    "flow": [
+      "Selected text",
+      "React extension",
+      "Flask analysis API"
+    ],
+    "highlights": [
+      "Built the selection-to-popup flow using Chrome content scripts and a background service worker.",
+      "Integrated optional Hugging Face zero-shot classification with a local rule-based fallback.",
+      "Handled empty selection, loading, results, and server errors in the React popup."
+    ],
+    "note": "Educational prototype. Analysis uses an optional inference service or a mock fallback; it is not clinically validated. Source repository is private."
+  },
+  {
+    "id": "daemon",
+    "name": "Daemon",
+    "category": "interfaces",
+    "label": "Interactive workspace demo",
+    "stack": [
+      "React",
+      "Vite",
+      "Browser storage"
+    ],
+    "description": "A marketing workspace demo for project conversations, campaign planning, and creative previews.",
+    "url": "https://github.com/Mo7amed-Ekramy/deamonDemo",
+    "demo": "https://daemon-frontend-nine.vercel.app/",
+    "flow": [
+      "Workspace UI",
+      "Campaign state",
+      "Browser storage"
+    ],
+    "highlights": [
+      "Created an interactive frontend workspace with project conversations and a shared campaign plan.",
+      "Added campaign-map and creative-preview views.",
+      "Kept workspace state in the browser for a self-contained demonstration."
+    ],
+    "note": "Frontend demo. Agent responses, account flows, approvals, and publishing are simulated."
+  },
+  {
+    "id": "rental",
+    "name": "Rental Countdown",
+    "category": "interfaces",
+    "label": "Mobile-first browser tool",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "localStorage"
+    ],
+    "description": "A rental timer interface with active sessions, completion confirmation, and locally saved state.",
+    "url": "https://github.com/Mo7amed-Ekramy/Rental",
+    "flow": [
+      "Rental form",
+      "Countdown timers",
+      "localStorage"
+    ],
+    "highlights": [
+      "Built a mobile-first rental flow with persistent countdown timers.",
+      "Added completion confirmation, sound and vibration alerts where supported.",
+      "Supported adding games with uploaded photos and resetting completed rentals for the day."
+    ],
+    "note": "Static browser application. Data is saved on the current device.",
+    "demo": "https://rental-nine-inky.vercel.app/"
+  },
+  {
+    "id": "flight-delay",
+    "name": "Flight Delay Explorer",
+    "category": "data",
+    "label": "Data application",
+    "stack": [
+      "Python",
+      "Streamlit",
+      "scikit-learn",
+      "SHAP"
+    ],
+    "description": "A dashboard for exploring historical flight predictions, risk scores, and feature explanations.",
+    "url": "https://github.com/Mo7amed-Ekramy/Delay-Prediction",
+    "flow": [
+      "Local artifacts",
+      "Model pipeline",
+      "Streamlit views"
+    ],
+    "highlights": [
+      "Organized views for model comparison, historical predictions, and high-risk flights.",
+      "Added a flight simulator that uses a saved model pipeline.",
+      "Presented feature importance and SHAP explanations with cached local artifacts."
+    ],
+    "note": "Educational model and dashboard. No production impact or predictive accuracy is claimed here."
+  },
+  {
+    "id": "viva-hurghada",
+    "name": "Viva Hurghada",
+    "category": "interfaces",
+    "label": "Travel landing page",
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "description": "A travel website presenting Hurghada tours and excursions, with booking inquiries handled through WhatsApp.",
+    "url": "https://github.com/Mo7amed-Ekramy/Hurghada_With_Waleed",
+    "demo": "https://vivahurghada.fun/",
+    "flow": [
+      "Tour catalog",
+      "Booking inquiry",
+      "WhatsApp"
+    ],
+    "highlights": [
+      "Built a responsive interface for browsing tours and excursion information.",
+      "Connected booking inquiries to WhatsApp.",
+      "Added site icons and browser metadata."
+    ],
+    "note": "Public travel website. Booking inquiries are sent through WhatsApp; the site does not process online payments."
+  },
+  {
+    "id": "edumad",
+    "name": "Edumad",
+    "category": "interfaces",
+    "label": "HTML and CSS practice",
+    "stack": [
+      "HTML",
+      "CSS"
+    ],
+    "description": "An educational-platform landing page exercise with static content sections and visual sign-in controls.",
+    "url": "https://github.com/Mo7amed-Ekramy/project-1",
+    "demo": "https://edumad-ekramy.vercel.app/",
+    "flow": [
+      "HTML content",
+      "CSS layouts",
+      "Static prototype"
+    ],
+    "highlights": [
+      "Created static sections for community features, courses, and team content.",
+      "Practiced page layout and styling with local images and icon fonts."
+    ],
+    "note": "Early frontend practice project. Navigation placeholders and sign-in controls are visual only; this demo has no account system."
+  }
+]
